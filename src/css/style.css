@@ -1,0 +1,354 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    background-color: #010027;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu li{
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.menu li::after{
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2.2px;
+    width: 0;
+    background-color: #ffcc00;
+    transition: 0.3s ease-in-out;
+}
+
+.menu li:hover::after {
+    width: 100%;
+}
+
+.botoes{
+    display: flex;
+    gap: 64px;
+    margin-top: 35px;
+}
+
+.design1{
+    background-color: #ffcc00;
+    width: 174px;
+    height: 70px;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    transform: scale(1);
+}
+
+.design1:hover{
+    background-color: #010027;
+    color: #ffcc00;
+    border: 1px solid #ffcc00;
+    outline: 1px solid #fFF;
+    transition: 0.4s;
+    transform: scale(1.05);
+}
+
+.design2{
+    background-color: #010027;
+    color: #ffcc00;
+    width: 174px;
+    height: 70px;
+    border-radius: 25px;
+    border: 2px solid #ffcc00; ;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    transform: scale(1);
+}
+
+.design2:hover{
+    background-color: #ffcc00;
+    color: #010027;
+    border: 1px solid #fFF;
+    transition: 0.4s;
+    transform: scale(1.05);
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(to right, #020046, #0600AC);
+    color: #fff;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Garante que fique acima dos outros elementos */
+    box-shadow: 0px 0px 6px 0.5px white;
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap:29px ;
+}
+
+#logo{
+    background-color: #ffcc00;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    
+}
+
+#sobre{
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#sobre h1{
+    font-size: 48px;
+    color: #ffcc00;
+    font-weight: 500;
+}
+
+span{
+    font-weight: 700;
+}
+
+#sobre h5{
+    color: #dedada;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#sobre p{
+    margin-top: 21px;
+    font-weight: 400;
+    color: #fff;
+}
+
+/* Container que envolve as duas imagens */
+.imagemCentro {
+    position: relative;
+    width: 400px;  /* ou ajuste para caber a imagem maior */
+    height: 400px; /* altura suficiente para ambas */
+    background: linear-gradient(to bottom, #010021, #04007C);
+    border: 5px solid #0800FF;
+    outline: 5px solid #ffcc00;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.imagemCentro:hover{
+    transform: scale(1.1);
+}
+
+/* Logo */
+#logoCentro {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+/* Personagem */
+#logoCentro2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.sobreMim h1{
+    text-align: center;
+    color: #ffffff;
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+.infos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* (opcional) restringe largura máxima */
+    max-width: 75%;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+.infos p{
+    font-size: 20px;
+    font-weight: bold;
+    color: #dedada;
+}
+
+.imgSobreMim{
+    background-color: #ffcc00;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.perfis{
+    display: flex;
+    align-items: center; /* Alinha verticalmente */
+    gap: 20px; /* Espaço entre a imagem e o texto */
+    margin-bottom: 16px;
+}
+
+.perfis h2{
+    color: #ffcc00;
+    font-size: 32px;
+}
+
+
+.texts{
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.listaDiferenciais {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* duas colunas iguais */
+  gap: 20px;  
+}
+
+
+.listaDiferenciais li{
+    display: flex;
+    align-items: center;
+    padding: 5px 25px 5px 5px;
+    background-color: #030061;
+    width: 70%;
+    font-weight: bold;
+    color: white;
+}
+
+.listaDiferenciais img{
+    margin-right: 20px;
+}
+
+#containerTecn{
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+#containerTecn h1{
+    font-size: 36px;
+    margin: 50px 0;
+    color: #fff;
+}
+
+.container-cards{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.cards{
+    width: 377px;
+    height: 446px;
+    background-color: #020046;
+    border: 5px #fff solid;
+    border-radius: 15px;
+    text-align: center;
+    
+}
+
+.cards h2{
+    margin-top: 30px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+.programas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #DEDADA;
+    margin-top: 25px;
+    gap: 12px;
+}
+
+.programas img{
+    margin-right: 10px;
+}
+
+.programas li{
+    display: flex;
+    align-items: center;
+}
+
+#containerTecn h3{
+    font-size: 24px;
+    margin-top: 70px;
+    color: #fff;
+    font-weight: bold;
+}
+
+#containerTecn button{
+    margin-top: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
