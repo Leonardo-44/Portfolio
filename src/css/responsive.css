@@ -1,0 +1,243 @@
+/* Responsividade para celulares muito pequenos (até 320px) */
+@media (max-width: 399px) {
+
+    .container,
+  .contats,
+  .cabecalho,
+  .formulario,
+  #sobre,
+  .infos {
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+  }
+
+  .container {
+    text-align: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .menu ul {
+    align-items: center;
+  }
+
+  p, h1, h2, h3, h5 {
+    text-align: center;
+  }
+}
+
+/* Celulares pequenos (até 480px) */
+@media (max-width: 480px) {
+
+  .cabecalho{
+    flex-direction: column;
+    position: static;
+    align-items: center;
+    height: auto; /* ✅ permite que a altura cresça com o conteúdo */
+    width: 100vw; /* garante que ocupa a largura total */
+    box-sizing: border-box;
+  }  
+
+  #sobre{
+    gap: 0;
+  }
+
+  #sobre h1 {
+    font-size: 26px;
+  }
+
+  #sobre h5 {
+    font-size: 16px;
+  }
+
+  .imagemCentro {
+    width: 200px;
+    height: 200px;
+  }
+
+  .perfis h2 {
+    font-size: 22px;
+  }
+
+  .listaDiferenciais li {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .cards h2 {
+    font-size: 20px;
+  }
+
+  .programas li {
+    font-size: 14px;
+  }
+
+  .formulario h2 {
+    font-size: 20px;
+  }
+
+  .formulario button {
+    width: 80px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .menu ul {
+    gap: 6px;
+  }
+
+  .menu li {
+    font-size: 14px;
+  }
+}
+
+/* Telas médias (tablets) */
+@media (max-width: 768px) {
+
+    button{
+        width: 50px;
+    }
+
+  .cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  #sobre{
+    display: flex;
+    align-items: center;
+  }
+
+   #sobre h1 {
+    font-size: 32px;
+  }
+
+   #sobre  h5 {
+    font-size: 20px;
+  }
+
+   #sobre p {
+    font-size: 16px;
+  }
+
+  .infos p{
+    font-size: 16px;
+  }
+
+
+  .botoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 300px;
+    height: 70px;
+  }
+
+  .menu li::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0.5px;
+    width: 0;
+    background-color: #ffcc00;
+    transition: 0.3s ease-in-out;
+    }
+
+  .container {
+    flex-direction: column-reverse;
+    padding: 40px 20px;
+    text-align: center;
+} 
+
+  .imagemCentro {
+    width: 250px;
+    height: 250px;
+    align-items: center;
+  }
+
+  #logoCentro{
+    width: 400px;
+  }
+
+  #logoCentro2{
+    width: 200px;
+  }
+
+  #logoCentro3{
+    width: 400px;
+    margin-top: 30px;
+  }
+
+  .infos {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .listaDiferenciais {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .listaDiferenciais li {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .container-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .cards {
+    width: 90%;
+  }
+
+  .cards h2{
+    margin-top: 16px;
+  }
+
+  .perfis, .texts{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #containerTecn {
+    min-height: auto; /* deixa o container crescer conforme o conteúdo */
+    height: auto;
+  }
+
+  .contatos h1{
+    margin: 30px 0 ;
+}
+
+ .contats {
+    margin: 0;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.formulario{
+    width: 90%;
+}
+
+}
+
+
