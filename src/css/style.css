@@ -21,6 +21,10 @@ body{
     background-color: #010027;
 }
 
+section {
+  scroll-margin-top: 100px; /* ajuste para a altura do seu header */
+}
+
 .menu ul{
     list-style: none;
     display: flex;
@@ -36,7 +40,7 @@ body{
 }
 
 .menu li::after{
-    content: " ";
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
@@ -277,7 +281,7 @@ span{
 
 #containerTecn h1{
     font-size: 36px;
-    margin: 50px 0;
+    margin: 70px;
     color: #fff;
 }
 
@@ -315,6 +319,15 @@ span{
     gap: 12px;
 }
 
+.programas li{
+    transform: scale(1);
+    transition: 0.4s;
+}
+
+.programas li:hover{
+    transform: scale(1.3);
+}
+
 .programas img{
     margin-right: 10px;
 }
@@ -326,17 +339,90 @@ span{
 
 #containerTecn h3{
     font-size: 24px;
-    margin-top: 70px;
+    margin-top: 40px;
     color: #fff;
     font-weight: bold;
 }
 
 #containerTecn button{
-    margin-top: 70px;
+    margin-top: 40px;
 }
 
+.contatos h1{
+    text-align: center;
+    color: #ffffff;
+    font-size: 36px;
+    margin-bottom: 60px;
+}
 
+.contats{
+    margin: 110px 0;
+    display: flex;
+    justify-content: space-around;
+}
 
+.formulario{
+    color: #ffcc00;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    width: 377px;
+    height: 446px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 5px #fff solid;
+    border-radius: 15px;
+    background-color: #020046;
+}
+
+input{
+    background-color: #010027;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: #fff 1px solid;
+    color: #dedada;
+}
+
+textarea{
+    background-color: #010027;
+    font-weight: bold;
+    border: #fff 1px solid;
+    border-radius: 5px;
+    padding: 10px 23px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    resize: none;
+    color: #dedada;
+}
+
+.formulario button{
+    margin-bottom: 5px;
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+}
+
+.redesSociais{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.redesSociais img{
+    transform: scale(1);
+    transition: 0.3s;
+}
+
+.redesSociais img:hover{
+    transform: scale(1.6);
+}
 
 
 
