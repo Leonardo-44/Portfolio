@@ -1,270 +1,267 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: "Montserrat Alternates", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat Alternates", sans-serif;
 }
 
-html{
-    scroll-behavior: smooth;
-    overflow-x: hidden;
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
-a{
-    text-decoration: none;
-    color: inherit;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
 
-body{
-    background-color: #010027;
-    width: 100%;
+body {
+  background-color: #010027;
+  width: 100%;
 }
 
 section {
   scroll-margin-top: 100px; /* ajuste para a altura do seu header */
 }
 
-.mobileMenu{
-    display: none;
-    cursor: pointer;
+.mobileMenu {
+  display: none;
+  cursor: pointer;
 }
 
-.mobileMenu div{
-    width: 32px;
-    height: 2px;
-    background: #fff;
-    margin: 8px;
-    transition: 0.3s;
+.mobileMenu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.3s;
 }
 
-.menu ul{
-    list-style: none;
-    display: flex;
-    gap: 30px;
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
 }
 
-.menu li{
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 16px;
-    position: relative;
-    padding-bottom: 5px;
+.menu li {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  position: relative;
+  padding-bottom: 5px;
 }
 
-.menu li::after{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 2.2px;
-    width: 0;
-    background-color: #ffcc00;
-    transition: 0.3s ease-in-out;
+.menu li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2.2px;
+  width: 0;
+  background-color: #ffcc00;
+  transition: 0.3s ease-in-out;
 }
 
 .menu li:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
-.botoes{
-    display: flex;
-    gap: 64px;
-    margin-top: 35px;
+.botoes {
+  display: flex;
+  gap: 64px;
+  margin-top: 35px;
 }
 
-.design1{
-    background-color: #ffcc00;
-    width: 174px;
-    height: 70px;
-    border-radius: 25px;
-    border: none;
-    font-weight: bold;
-    font-size: 20px;
-    cursor: pointer;
-    transform: scale(1);
+.design1 {
+  background-color: #ffcc00;
+  width: 174px;
+  height: 70px;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  transform: scale(1);
 }
 
-.design1:hover{
-    background-color: #010027;
-    color: #ffcc00;
-    border: 1px solid #ffcc00;
-    outline: 1px solid #fFF;
-    transition: 0.4s;
-    transform: scale(1.05);
+.design1:hover {
+  background-color: #010027;
+  color: #ffcc00;
+  border: 1px solid #ffcc00;
+  outline: 1px solid #fff;
+  transition: 0.4s;
+  transform: scale(1.05);
 }
 
-.design2{
-    background-color: #010027;
-    color: #ffcc00;
-    width: 174px;
-    height: 70px;
-    border-radius: 25px;
-    border: 2px solid #ffcc00; ;
-    font-weight: bold;
-    font-size: 20px;
-    cursor: pointer;
-    transform: scale(1);
+.design2 {
+  background-color: #010027;
+  color: #ffcc00;
+  width: 174px;
+  height: 70px;
+  border-radius: 25px;
+  border: 2px solid #ffcc00;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  transform: scale(1);
 }
 
-.design2:hover{
-    background-color: #ffcc00;
-    color: #010027;
-    border: 1px solid #fFF;
-    transition: 0.4s;
-    transform: scale(1.05);
+.design2:hover {
+  background-color: #ffcc00;
+  color: #010027;
+  border: 1px solid #fff;
+  transition: 0.4s;
+  transform: scale(1.05);
 }
 
 .cabecalho {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background: linear-gradient(to right, #020046, #0600AC);
-    color: #fff;
-    height: 70px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000; /* Garante que fique acima dos outros elementos */
-    box-shadow: 0px 0px 6px 0.5px white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: linear-gradient(to right, #020046, #0600ac);
+  color: #fff;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Garante que fique acima dos outros elementos */
+  box-shadow: 0px 0px 6px 0.5px white;
 }
 
-
-.logo{
-    display: flex;
-    align-items: center;
-    gap:29px ;
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 29px;
 }
 
-#logo{
-    background-color: #ffcc00;
-    padding: 2px;
-    border-radius: 5px;
+#logo {
+  background-color: #ffcc00;
+  padding: 2px;
+  border-radius: 5px;
 }
 
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 100vh;
-    
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
 }
 
-#sobre{
-    max-width: 900px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+#sobre {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-#sobre h1{
-    font-size: 48px;
-    color: #ffcc00;
-    font-weight: 500;
+#sobre h1 {
+  font-size: 48px;
+  color: #ffcc00;
+  font-weight: 500;
 }
 
-span{
-    font-weight: 700;
+span {
+  font-weight: 700;
 }
 
-#sobre h5{
-    color: #dedada;
-    font-size: 24px;
-    font-weight: bold;
+#sobre h5 {
+  color: #dedada;
+  font-size: 24px;
+  font-weight: bold;
 }
 
-#sobre p{
-    margin-top: 21px;
-    font-weight: 400;
-    color: #fff;
+#sobre p {
+  margin-top: 21px;
+  font-weight: 400;
+  color: #fff;
 }
 
 /* Container que envolve as duas imagens */
 .imagemCentro {
-    position: relative;
-    width: 400px;  /* ou ajuste para caber a imagem maior */
-    height: 400px; /* altura suficiente para ambas */
-    background: linear-gradient(to bottom, #010021, #04007C);
-    border: 5px solid #0800FF;
-    outline: 5px solid #ffcc00;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: scale(1);
-    transition: 0.5s;
-    z-index: -1;
+  position: relative;
+  width: 400px; /* ou ajuste para caber a imagem maior */
+  height: 400px; /* altura suficiente para ambas */
+  background: linear-gradient(to bottom, #010021, #04007c);
+  border: 5px solid #0800ff;
+  outline: 5px solid #ffcc00;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(1);
+  transition: 0.5s;
+  z-index: -1;
 }
 
-.imagemCentro:hover{
-    transform: scale(1.1);
+.imagemCentro:hover {
+  transform: scale(1.1);
 }
 
 /* Logo */
 #logoCentro {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
 }
 
 /* Personagem */
 #logoCentro2 {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
 }
 
-.sobreMim h1{
-    text-align: center;
-    color: #ffffff;
-    font-size: 36px;
-    margin-top: 20px;
+.sobreMim h1 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 36px;
+  margin-top: 20px;
 }
 
 .infos {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* (opcional) restringe largura máxima */
-    max-width: 75%;
-    margin: 0 auto;
-    gap: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* (opcional) restringe largura máxima */
+  max-width: 75%;
+  margin: 0 auto;
+  gap: 50px;
 }
 
-.infos p{
-    font-size: 20px;
-    font-weight: bold;
-    color: #dedada;
+.infos p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #dedada;
 }
 
-.imgSobreMim{
-    background-color: #ffcc00;
-    padding: 5px;
-    border-radius: 50%;
+.imgSobreMim {
+  background-color: #ffcc00;
+  padding: 5px;
+  border-radius: 50%;
 }
 
-.perfis{
-    display: flex;
-    align-items: center; /* Alinha verticalmente */
-    gap: 20px; /* Espaço entre a imagem e o texto */
-    margin-bottom: 16px;
+.perfis {
+  display: flex;
+  align-items: center; /* Alinha verticalmente */
+  gap: 20px; /* Espaço entre a imagem e o texto */
+  margin-bottom: 16px;
 }
 
-.perfis h2{
-    color: #ffcc00;
-    font-size: 32px;
-    text-shadow: 0px 3px 3px #705a01;
+.perfis h2 {
+  color: #ffcc00;
+  font-size: 32px;
+  text-shadow: 0px 3px 3px #705a01;
 }
 
-
-.texts{
-    margin-bottom: 40px;
-    margin-top: 40px;
+.texts {
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 .listaDiferenciais {
@@ -272,193 +269,176 @@ span{
   padding: 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* duas colunas iguais */
-  gap: 20px;  
+  gap: 20px;
 }
 
-
-.listaDiferenciais li{
-    display: flex;
-    align-items: center;
-    padding: 5px 25px 5px 5px;
-    background-color: #030061;
-    width: 70%;
-    font-weight: bold;
-    color: white;
+.listaDiferenciais li {
+  display: flex;
+  align-items: center;
+  padding: 5px 25px 5px 5px;
+  background-color: #030061;
+  width: 70%;
+  font-weight: bold;
+  color: white;
 }
 
-.listaDiferenciais img{
-    margin-right: 20px;
+.listaDiferenciais img {
+  margin-right: 20px;
 }
 
-#containerTecn{
-    align-items: center;
-    text-align: center;
-    height: 100vh;
+#containerTecn {
+  align-items: center;
+  text-align: center;
+  height: 100vh;
 }
 
-#containerTecn h1{
-    font-size: 36px;
-    margin: 70px;
-    color: #fff;
+#containerTecn h1 {
+  font-size: 36px;
+  margin: 70px;
+  color: #fff;
 }
 
-.container-cards{
-    display: flex;
-    justify-content: center;
-    gap: 50px;
+.container-cards {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
 }
 
-.cards{
-    width: 377px;
-    height: 446px;
-    background-color: #020046;
-    border: 5px #fff solid;
-    border-radius: 15px;
-    text-align: center;
-    
+.cards {
+  width: 377px;
+  height: 446px;
+  background-color: #020046;
+  border: 5px #fff solid;
+  border-radius: 15px;
+  text-align: center;
 }
 
-.cards h2{
-    margin-top: 30px;
-    font-size: 32px;
-    font-weight: bold;
-    color: #ffcc00;
-    text-shadow: 0px 3px 3px #705a01;
+.cards h2 {
+  margin-top: 30px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #ffcc00;
+  text-shadow: 0px 3px 3px #705a01;
 }
 
-.programas{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    color: #DEDADA;
-    margin-top: 25px;
-    gap: 12px;
+.programas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #dedada;
+  margin-top: 25px;
+  gap: 12px;
 }
 
-.programas li{
-    transform: scale(1);
-    transition: 0.4s;
+.programas li {
+  transform: scale(1);
+  transition: 0.4s;
 }
 
-.programas li:hover{
-    transform: scale(1.3);
+.programas li:hover {
+  transform: scale(1.3);
 }
 
-.programas img{
-    margin-right: 10px;
+.programas img {
+  margin-right: 10px;
 }
 
-.programas li{
-    display: flex;
-    align-items: center;
+.programas li {
+  display: flex;
+  align-items: center;
 }
 
-#containerTecn h3{
-    font-size: 24px;
-    margin-top: 40px;
-    color: #fff;
-    font-weight: bold;
+#containerTecn h3 {
+  font-size: 24px;
+  margin-top: 40px;
+  color: #fff;
+  font-weight: bold;
 }
 
-#containerTecn button{
-    margin-top: 40px;
+#containerTecn button {
+  margin-top: 40px;
 }
 
-.contatos h1{
-    text-align: center;
-    color: #ffffff;
-    font-size: 36px;
-    margin-bottom: 60px;
+.contatos h1 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 36px;
+  margin-bottom: 60px;
 }
 
-.contats{
-    margin: 110px 0;
-    display: flex;
-    justify-content: space-around;
+.contats {
+  margin: 110px 0;
+  display: flex;
+  justify-content: space-around;
 }
 
-.formulario{
-    color: #ffcc00;
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    width: 377px;
-    height: 446px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    border: 5px #fff solid;
-    border-radius: 15px;
-    background-color: #020046;
+.formulario {
+  color: #ffcc00;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  width: 377px;
+  height: 446px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border: 5px #fff solid;
+  border-radius: 15px;
+  background-color: #020046;
 }
 
-input{
-    background-color: #010027;
-    font-weight: bold;
-    padding: 10px 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: #fff 1px solid;
-    color: #dedada;
+input {
+  background-color: #010027;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: #fff 1px solid;
+  color: #dedada;
 }
 
-textarea{
-    background-color: #010027;
-    font-weight: bold;
-    border: #fff 1px solid;
-    border-radius: 5px;
-    padding: 10px 23px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    resize: none;
-    color: #dedada;
+textarea {
+  background-color: #010027;
+  font-weight: bold;
+  border: #fff 1px solid;
+  border-radius: 5px;
+  padding: 10px 23px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  resize: none;
+  color: #dedada;
 }
 
-.formulario button{
-    margin-bottom: 25px;
-    width: 100px;
-    height: 50px;
-    font-size: 20px;
+.formulario button {
+  margin-bottom: 25px;
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
 }
 
-.formulario h2{
-    margin: 10px 0;
-    box-sizing: border-box;
-    text-shadow: 0px 3px 3px #705a01;
+.formulario h2 {
+  margin: 10px 0;
+  box-sizing: border-box;
+  text-shadow: 0px 3px 3px #705a01;
 }
 
-.redesSociais{
-    margin-top: 15px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    gap: 10px;
+.redesSociais {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
 }
 
-.redesSociais img{
-    transform: scale(1);
-    transition: 0.3s;
+.redesSociais img {
+  transform: scale(1);
+  transition: 0.3s;
 }
 
-.redesSociais img:hover{
-    transform: scale(1.6);
+.redesSociais img:hover {
+  transform: scale(1.6);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

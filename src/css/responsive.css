@@ -1,39 +1,31 @@
 /* Responsividade para celulares muito pequenos (até 320px) */
 @media (max-width: 380px) {
-
-  .cabecalho{
+  .cabecalho {
     display: flex;
     justify-content: space-around;
   }
 
-  h2{
+  h2 {
     font-size: 20px;
   }
 
-  .menu ul{
+  .menu ul {
     height: 100vw;
-
   }
-
-
-
-  
 }
 
 /* Celulares pequenos (até 480px) */
 @media (max-width: 480px) {
-
-  .cabecalho{
+  .cabecalho {
     flex-direction: column;
     position: static;
     align-items: center;
     height: auto; /* ✅ permite que a altura cresça com o conteúdo */
     width: 100vw; /* garante que ocupa a largura total */
     box-sizing: border-box;
-  }  
+  }
 
-
-  #sobre{
+  #sobre {
     gap: 0;
   }
 
@@ -84,14 +76,13 @@
 
 /* Telas médias (tablets) */
 @media (max-width: 900px) {
-
-    body{
+  body {
     overflow-x: hidden;
-    }
+  }
 
-    button{
-        width: 50px;
-    }
+  button {
+    width: 50px;
+  }
 
   .cabecalho {
     display: flex;
@@ -108,29 +99,28 @@
     align-items: center;
   }
 
-  #sobre{
+  #sobre {
     display: flex;
     align-items: center;
   }
 
-   #sobre h1 {
+  #sobre h1 {
     font-size: 32px;
   }
 
-   #sobre  h5 {
+  #sobre h5 {
     font-size: 20px;
   }
 
-   #sobre p {
+  #sobre p {
     font-size: 16px;
   }
 
-  .infos p{
+  .infos p {
     font-size: 16px;
   }
 
-
-  .botoes{
+  .botoes {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,12 +129,12 @@
     height: 70px;
   }
 
-  .menu li{
+  .menu li {
     margin-left: 0;
     opacity: 0;
   }
 
-  .menu{
+  .menu {
     position: absolute;
     top: 7vh;
     right: 0;
@@ -158,15 +148,15 @@
     padding: 10px;
   }
 
-  .mobileMenu{
+  .mobileMenu {
     display: block;
   }
 
-  .menu.active{
+  .menu.active {
     transform: translateX(0);
   }
 
-  .menu li::after{
+  .menu li::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -175,13 +165,13 @@
     width: 0;
     background-color: #ffcc00;
     transition: 0.3s ease-in-out;
-    }
+  }
 
   .container {
     flex-direction: column-reverse;
     padding: 40px 20px;
     text-align: center;
-} 
+  }
 
   .imagemCentro {
     width: 250px;
@@ -189,15 +179,15 @@
     align-items: center;
   }
 
-  #logoCentro{
+  #logoCentro {
     width: 400px;
   }
 
-  #logoCentro2{
+  #logoCentro2 {
     width: 200px;
   }
 
-  #logoCentro3{
+  #logoCentro3 {
     width: 400px;
     margin-top: 30px;
   }
@@ -209,7 +199,7 @@
 
   .listaDiferenciais {
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
     align-items: center;
     width: 100%;
   }
@@ -229,11 +219,12 @@
     width: 90%;
   }
 
-  .cards h2{
+  .cards h2 {
     margin-top: 16px;
   }
 
-  .perfis, .texts{
+  .perfis,
+  .texts {
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -244,45 +235,43 @@
     height: auto;
   }
 
-  .contatos h1{
-    margin: 30px 0 ;
-}
+  .contatos h1 {
+    margin: 30px 0;
+  }
 
- .contats {
+  .contats {
     margin: 0;
     flex-direction: column;
     text-align: center;
     align-items: center;
     gap: 30px;
     margin-bottom: 30px;
-}
+  }
 
-.formulario{
+  .formulario {
     width: 90%;
-}
+  }
 
-@keyframes menuLinkFade{
-  from{
+  @keyframes menuLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .mobileMenu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+
+  .mobileMenu.active .line2 {
     opacity: 0;
-    transform: translateX(50px);
   }
-  to {
-    opacity: 1;
-    transform: translateX(0);
+
+  .mobileMenu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
   }
-}
-
-.mobileMenu.active .line1{
-  transform: rotate(-45deg) translate(-8px, 8px);
-}
-
-.mobileMenu.active .line2{
-  opacity: 0;
-}
-
-
-.mobileMenu.active .line3{
-   transform: rotate(45deg) translate(-5px, -7px);
-}
-
 }
