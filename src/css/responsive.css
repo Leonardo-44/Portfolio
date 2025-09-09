@@ -1,30 +1,23 @@
 /* Responsividade para celulares muito pequenos (até 320px) */
-@media (max-width: 399px) {
+@media (max-width: 380px) {
 
-    .container,
-  .contats,
-  .cabecalho,
-  .formulario,
-  #sobre,
-  .infos {
-    padding-left: 16px;
-    padding-right: 16px;
-    width: 100%;
+  .cabecalho{
+    display: flex;
+    justify-content: space-around;
   }
 
-  .container {
-    text-align: center;
-    align-items: center;
-    width: 100%;
+  h2{
+    font-size: 20px;
   }
 
-  .menu ul {
-    align-items: center;
+  .menu ul{
+    height: 100vw;
+
   }
 
-  p, h1, h2, h3, h5 {
-    text-align: center;
-  }
+
+
+  
 }
 
 /* Celulares pequenos (até 480px) */
@@ -38,6 +31,7 @@
     width: 100vw; /* garante que ocupa a largura total */
     box-sizing: border-box;
   }  
+
 
   #sobre{
     gap: 0;
@@ -83,17 +77,17 @@
     font-size: 16px;
   }
 
-  .menu ul {
-    gap: 6px;
-  }
-
   .menu li {
     font-size: 14px;
   }
 }
 
 /* Telas médias (tablets) */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+
+    body{
+    overflow-x: hidden;
+    }
 
     button{
         width: 50px;
@@ -101,7 +95,7 @@
 
   .cabecalho {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     height: auto;
@@ -143,6 +137,33 @@
     gap: 50px;
     width: 300px;
     height: 70px;
+  }
+
+  .menu li{
+    margin-left: 0;
+    opacity: 0;
+  }
+
+  .menu{
+    position: absolute;
+    top: 7vh;
+    right: 0;
+    width: 100vw;
+    height: 25vh;
+    background-color: #020046;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    transition: 0.3s ease-in;
+    padding: 10px;
+  }
+
+  .mobileMenu{
+    display: block;
+  }
+
+  .menu.active{
+    transform: translateX(0);
   }
 
   .menu li::after{
@@ -187,7 +208,9 @@
   }
 
   .listaDiferenciais {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
     width: 100%;
   }
 
@@ -238,6 +261,28 @@
     width: 90%;
 }
 
+@keyframes menuLinkFade{
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobileMenu.active .line1{
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobileMenu.active .line2{
+  opacity: 0;
 }
 
 
+.mobileMenu.active .line3{
+   transform: rotate(45deg) translate(-5px, -7px);
+}
+
+}
