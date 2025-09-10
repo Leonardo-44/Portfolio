@@ -1,16 +1,37 @@
-/* Responsividade para celulares muito pequenos (até 320px) */
-@media (max-width: 380px) {
+/* Responsividade para celulares muito pequenos (até 306px) */
+@media (max-width: 306px) {
   .cabecalho {
     display: flex;
-    justify-content: space-around;
+    text-align: center;
+    justify-content: center;
   }
 
+  .contatos h1 {
+    font-size: 24px;
+  }
+
+  #containerTecn h1 {
+    font-size: 24px;
+  }
+
+  #containerTecn h3 {
+    font-size: 18px;
+  }
+
+  .logo {
+    gap: 10px;
+  }
+}
+
+/* Responsividade para celulares muito pequenos (até 320px) */
+@media (max-width: 390px) {
+  
   h2 {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .menu ul {
-    height: 100vw;
+    height: 100;
   }
 }
 
@@ -21,7 +42,7 @@
     position: static;
     align-items: center;
     height: auto; /* ✅ permite que a altura cresça com o conteúdo */
-    width: 100vw; /* garante que ocupa a largura total */
+    width: 100%; /* garante que ocupa a largura total */
     box-sizing: border-box;
   }
 
@@ -75,7 +96,7 @@
 }
 
 /* Telas médias (tablets) */
-@media (max-width: 900px) {
+@media (max-width: 819px) {
   body {
     overflow-x: hidden;
   }
@@ -91,12 +112,6 @@
     flex-direction: column;
     height: auto;
     padding: 10px 0;
-  }
-
-  .menu ul {
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
   }
 
   #sobre {
@@ -129,6 +144,12 @@
     height: 70px;
   }
 
+  .menu ul {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
   .menu li {
     margin-left: 0;
     opacity: 0;
@@ -136,10 +157,9 @@
 
   .menu {
     position: absolute;
-    top: 7vh;
+    top: 60px;
     right: 0;
-    width: 100vw;
-    height: 25vh;
+    width: 100%;
     background-color: #020046;
     flex-direction: column;
     align-items: center;
@@ -206,7 +226,6 @@
 
   .listaDiferenciais li {
     width: 90%;
-    font-size: 16px;
   }
 
   .container-cards {
@@ -273,5 +292,126 @@
 
   .mobileMenu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
+  }
+}
+
+@media (min-width: 820px) and (max-width: 1280px) {
+  .logo {
+    gap: 16px;
+  }
+
+  .logo h2 {
+    font-size: 20px;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .menu li {
+    margin-left: 0;
+    opacity: 0;
+  }
+
+  .menu {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    background-color: #020046;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    transition: 0.3s ease-in;
+    padding: 10px;
+  }
+
+  .mobileMenu {
+    display: block;
+  }
+
+  .menu.active {
+    transform: translateX(0);
+  }
+
+  @keyframes menuLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .mobileMenu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+
+  .mobileMenu.active .line2 {
+    opacity: 0;
+  }
+
+  .mobileMenu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+
+  /*Menu Sobre*/
+  .container {
+    flex-direction: column-reverse;
+    padding: 40px;
+    align-items: center;
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  .botoes {
+    display: flex;
+    justify-content: space-around;
+    gap: 0;
+  }
+
+  .infos {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+  }
+
+  #logoCentro3 {
+    width: 350px;
+  }
+
+  .texts p {
+    font-size: 14px;
+  }
+
+  .listaDiferenciais {
+    gap: 10px;
+  }
+
+  .listaDiferenciais li {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .container-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .contats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    gap: 10px;
   }
 }
