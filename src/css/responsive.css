@@ -11,7 +11,7 @@
   }
 
   #containerTecn h1 {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   #containerTecn h3 {
@@ -23,7 +23,7 @@
   }
 }
 
-/* Responsividade para celulares muito pequenos (até 320px) */
+/* Responsividade para celulares muito pequenos (até 390px) */
 @media (max-width: 390px) {
 
   h2 {
@@ -92,6 +92,14 @@
 
   .menu li {
     font-size: 14px;
+  }
+
+  #containerTecn h1{
+    font-size: 30px;
+  }
+
+  .container-cards h3{
+    font-size: 20px;
   }
 }
 
@@ -272,6 +280,11 @@
   .formulario {
     width: 90%;
   }
+
+  footer p{
+    font-size: 10px;
+  }
+
 
   @keyframes menuLinkFade {
     from {

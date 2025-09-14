@@ -28,6 +28,16 @@ section {
   scroll-margin-top: 100px; /* ajuste para a altura do seu header */
 }
 
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #020046, #0600ac);
+  color: #fff;
+  height: 35px;
+  font-weight: bold;
+}
+
 .menuLinks{
   display: none;
 }
