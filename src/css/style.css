@@ -303,7 +303,7 @@ span {
 #containerTecn {
   align-items: center;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 63px;
 }
 
 #containerTecn h1 {
@@ -388,6 +388,13 @@ span {
   justify-content: space-around;
 }
 
+.form{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+  align-items: center;
+}
+
 .formulario {
   color: #ffcc00;
   font-weight: bold;
@@ -440,12 +447,12 @@ textarea {
 }
 
 .redesSociais {
-  margin-top: 15px;
   display: flex;
   justify-content: center;
   text-align: center;
   align-items: center;
-  gap: 10px;
+  gap: 16px;
+  margin-bottom: 16px;
 }
 
 .redesSociais img {
@@ -454,5 +461,6 @@ textarea {
 }
 
 .redesSociais img:hover {
+  filter: drop-shadow(0.5px 0.5px 5px white);
   transform: scale(1.6);
 }
