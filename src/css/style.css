@@ -1,3 +1,4 @@
+/* ===== RESET GLOBAL ===== */
 * {
   margin: 0;
   padding: 0;
@@ -28,7 +29,7 @@ section {
   scroll-margin-top: 100px; /* ajuste para a altura do seu header */
 }
 
-footer{
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,21 +39,40 @@ footer{
   font-weight: bold;
 }
 
-.menuLinks{
-  display: none;
+
+
+/* ===== CABEÇALHO ===== */
+.cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: linear-gradient(to right, #020046, #0600ac);
+  color: #fff;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Garante que fique acima dos outros elementos */
+  box-shadow: 0px 0px 6px 0.5px white;
 }
 
-.mobileMenu {
-  display: none;
-  cursor: pointer;
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 29px;
 }
 
-.mobileMenu div {
-  width: 32px;
-  height: 2px;
-  background: #fff;
-  margin: 8px;
-  transition: 0.3s;
+#logo {
+  background-color: #ffcc00;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+/* ===== MENU ===== */
+
+.menuLinks {
+  display: none;
 }
 
 .menu ul {
@@ -84,22 +104,44 @@ footer{
   width: 100%;
 }
 
+/* ===== MENU MOBILE ===== */
+
+.mobileMenu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobileMenu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+/* ===== BOTÕES ===== */
+
 .botoes {
   display: flex;
   gap: 64px;
   margin-top: 35px;
 }
 
-.design1 {
-  background-color: #ffcc00;
+.design1,
+.design2 {
   width: 174px;
   height: 70px;
   border-radius: 25px;
-  border: none;
   font-weight: bold;
   font-size: 20px;
   cursor: pointer;
   transform: scale(1);
+  transition: 0.4s;
+}
+
+.design1 {
+  background-color: #ffcc00;
+  border: none;
 }
 
 .design1:hover {
@@ -114,14 +156,7 @@ footer{
 .design2 {
   background-color: #010027;
   color: #ffcc00;
-  width: 174px;
-  height: 70px;
-  border-radius: 25px;
   border: 2px solid #ffcc00;
-  font-weight: bold;
-  font-size: 20px;
-  cursor: pointer;
-  transform: scale(1);
 }
 
 .design2:hover {
@@ -132,32 +167,7 @@ footer{
   transform: scale(1.05);
 }
 
-.cabecalho {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background: linear-gradient(to right, #020046, #0600ac);
-  color: #fff;
-  height: 70px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000; /* Garante que fique acima dos outros elementos */
-  box-shadow: 0px 0px 6px 0.5px white;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 29px;
-}
-
-#logo {
-  background-color: #ffcc00;
-  padding: 2px;
-  border-radius: 5px;
-}
+/* ===== SEÇÃO PRINCIPAL ===== */
 
 .container {
   display: flex;
@@ -195,6 +205,7 @@ span {
   color: #fff;
 }
 
+/* ===== IMAGEM CENTRAL ===== */
 /* Container que envolve as duas imagens */
 .imagemCentro {
   position: relative;
@@ -216,22 +227,22 @@ span {
   transform: scale(1.1);
 }
 
-/* Logo */
-#logoCentro {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-}
-
-/* Personagem */
+#logoCentro,
 #logoCentro2 {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+}
+
+#logoCentro {
+  z-index: 1;
+}
+
+#logoCentro2 {
   z-index: 2;
 }
 
+/* ===== SOBRE MIM ===== */
 .sobreMim h1 {
   text-align: center;
   color: #ffffff;
@@ -279,6 +290,7 @@ span {
   margin-top: 40px;
 }
 
+/* ===== LISTA DE DIFERENCIAIS ===== */
 .listaDiferenciais {
   list-style: none;
   padding: 0;
@@ -300,6 +312,7 @@ span {
   margin-right: 20px;
 }
 
+/* ===== TECNOLOGIAS ===== */
 #containerTecn {
   align-items: center;
   text-align: center;
@@ -312,6 +325,7 @@ span {
   color: #fff;
 }
 
+/* ===== CARDS DE TECNOLOGIAS ===== */
 .container-cards {
   display: flex;
   justify-content: center;
@@ -375,6 +389,7 @@ span {
   margin-top: 40px;
 }
 
+/* ===== CONTATO ===== */
 .contatos h1 {
   text-align: center;
   color: #ffffff;
@@ -388,7 +403,7 @@ span {
   justify-content: space-around;
 }
 
-.form{
+.form {
   display: flex;
   justify-content: center;
   margin-bottom: 60px;

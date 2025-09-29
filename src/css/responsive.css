@@ -5,37 +5,27 @@
     text-align: center;
     justify-content: center;
   }
-
   .contatos h1 {
     font-size: 24px;
   }
-
   #containerTecn h1 {
     font-size: 18px;
   }
-
   #containerTecn h3 {
     font-size: 16px;
   }
-
   .logo {
     gap: 10px;
   }
-}
-
-/* Responsividade para celulares muito pequenos (até 390px) */
+} /* Responsividade para celulares muito pequenos (até 390px) */
 @media (max-width: 390px) {
-
   h2 {
     font-size: 16px;
   }
-
   .menu ul {
     height: 100;
   }
-}
-
-/* Celulares pequenos (até 480px) */
+} /* Celulares pequenos (até 480px) */
 @media (max-width: 480px) {
   .cabecalho {
     flex-direction: column;
@@ -45,74 +35,63 @@
     width: 100%; /* garante que ocupa a largura total */
     box-sizing: border-box;
   }
-
   #sobre {
     gap: 0;
   }
-
   #sobre h1 {
     font-size: 26px;
   }
-
   #sobre h5 {
     font-size: 16px;
   }
-
+  .cards{
+    width: 90%;
+  }
   .imagemCentro {
     width: 200px;
     height: 200px;
   }
-
   .perfis h2 {
     font-size: 22px;
   }
-
   .listaDiferenciais li {
     font-size: 14px;
     padding: 10px;
   }
-
   .cards h2 {
     font-size: 20px;
   }
-
   .programas li {
     font-size: 14px;
   }
-
+  .formulario{
+    width: 90%;
+  }
   .formulario h2 {
     font-size: 20px;
   }
-
   .formulario button {
     width: 80px;
     height: 40px;
     font-size: 16px;
   }
-
   .menu li {
     font-size: 14px;
   }
-
-  #containerTecn h1{
+  #containerTecn h1 {
     font-size: 30px;
   }
-
-  .container-cards h3{
+  .container-cards h3 {
     font-size: 20px;
   }
-}
-
-/* Telas médias (tablets) */
+} /* Telas médias (tablets) */
 @media (max-width: 819px) {
   body {
     overflow-x: hidden;
   }
-
   button {
     width: 50px;
   }
-
   .cabecalho {
     display: flex;
     justify-content: space-around;
@@ -121,28 +100,22 @@
     height: auto;
     padding: 10px 0;
   }
-
   #sobre {
     display: flex;
     align-items: center;
   }
-
   #sobre h1 {
     font-size: 32px;
   }
-
   #sobre h5 {
     font-size: 20px;
   }
-
   #sobre p {
     font-size: 16px;
   }
-
   .infos p {
     font-size: 16px;
   }
-
   .botoes {
     display: flex;
     justify-content: center;
@@ -151,18 +124,15 @@
     width: 300px;
     height: 70px;
   }
-
   .menu ul {
     flex-direction: column;
     gap: 15px;
     align-items: center;
   }
-
   .menu li {
     margin-left: 0;
     opacity: 0;
   }
-
   .menu {
     display: none;
     position: absolute;
@@ -176,16 +146,13 @@
     transition: 0.3s ease-in-out;
     padding: 10px;
   }
-
   .mobileMenu {
     display: block;
   }
-
   .menu.active {
     transform: translateX(0);
     display: block;
   }
-
   .menu li::after {
     content: "";
     position: absolute;
@@ -196,78 +163,60 @@
     background-color: #ffcc00;
     transition: 0.3s ease-in-out;
   }
-
   .container {
     flex-direction: column-reverse;
     padding: 40px 20px;
     text-align: center;
   }
-
   .imagemCentro {
     width: 250px;
     height: 250px;
     align-items: center;
   }
-
   #logoCentro {
     width: 400px;
   }
-
   #logoCentro2 {
     width: 200px;
   }
-
   #logoCentro3 {
     width: 400px;
     margin-top: 30px;
   }
-
   .infos {
     flex-direction: column;
     gap: 30px;
   }
-
   .listaDiferenciais {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
   }
-
   .listaDiferenciais li {
     width: 90%;
   }
-
   .container-cards {
     flex-direction: column;
     align-items: center;
     gap: 30px;
   }
-
-  .cards {
-    width: 90%;
-  }
-
   .cards h2 {
     margin-top: 16px;
   }
-
   .perfis,
   .texts {
     align-items: center;
     justify-content: center;
     text-align: center;
   }
-
   #containerTecn {
     min-height: auto; /* deixa o container crescer conforme o conteúdo */
     height: auto;
   }
-
   .contatos h1 {
     margin: 30px 0;
   }
-
   .contats {
     margin: 0;
     flex-direction: column;
@@ -276,16 +225,9 @@
     gap: 30px;
     margin-bottom: 30px;
   }
-
-  .formulario {
-    width: 90%;
-  }
-
-  footer p{
+  footer p {
     font-size: 10px;
   }
-
-
   @keyframes menuLinkFade {
     from {
       opacity: 0;
@@ -296,40 +238,32 @@
       transform: translateX(0);
     }
   }
-
   .mobileMenu.active .line1 {
     transform: rotate(-45deg) translate(-8px, 8px);
   }
-
   .mobileMenu.active .line2 {
     opacity: 0;
   }
-
   .mobileMenu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
   }
 }
-
 @media (min-width: 820px) and (max-width: 1280px) {
   .logo {
     gap: 16px;
   }
-
   .logo h2 {
     font-size: 20px;
   }
-
   .menu ul {
     flex-direction: column;
     gap: 15px;
     align-items: center;
   }
-
   .menu li {
     margin-left: 0;
     opacity: 0;
   }
-
   .menu {
     position: absolute;
     top: 70px;
@@ -342,15 +276,12 @@
     transition: 0.3s ease-in;
     padding: 10px;
   }
-
   .mobileMenu {
     display: block;
   }
-
   .menu.active {
     transform: translateX(0);
   }
-
   @keyframes menuLinkFade {
     from {
       opacity: 0;
@@ -361,20 +292,15 @@
       transform: translateX(0);
     }
   }
-
   .mobileMenu.active .line1 {
     transform: rotate(-45deg) translate(-8px, 8px);
   }
-
   .mobileMenu.active .line2 {
     opacity: 0;
   }
-
   .mobileMenu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
-  }
-
-  /*Menu Sobre*/
+  } /*Menu Sobre*/
   .container {
     flex-direction: column-reverse;
     padding: 40px;
@@ -382,37 +308,30 @@
     text-align: center;
     margin-top: 25px;
   }
-
   .botoes {
     display: flex;
     justify-content: space-around;
     gap: 0;
   }
-
   .infos {
     display: flex;
     justify-content: center;
     gap: 10px;
     align-items: center;
   }
-
   #logoCentro3 {
     width: 350px;
   }
-
   .texts p {
     font-size: 14px;
   }
-
   .listaDiferenciais {
     gap: 10px;
   }
-
   .listaDiferenciais li {
     width: 100%;
     font-size: 14px;
   }
-
   .container-cards {
     display: flex;
     justify-content: center;
@@ -420,11 +339,9 @@
     width: 90%;
     margin: 0 auto;
   }
-
-  .contatos{
+  .contatos {
     margin-bottom: 26px;
   }
-
   .contats {
     display: flex;
     align-items: center;
